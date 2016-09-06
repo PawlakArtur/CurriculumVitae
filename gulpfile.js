@@ -55,6 +55,7 @@ gulp.task('cssreset', function() {
 gulp.task('sass', function() {
     return gulp.src(paths.sass)
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(concatCss('style.css'))
         .pipe(cssmin())
         .pipe(rename('style.min.css'))
