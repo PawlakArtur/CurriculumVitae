@@ -1,122 +1,140 @@
+$font_color: #4d4d4d;
+$font_color_white: #fff;
+$navbar_color: #B1200F;
+$navbar_background_color: #fff;
+$navbar_underline_color: #3d3d3d;
+
 body {
   background-color: rgba(0, 149, 148, 0.04);
+  color: $font_color;
 }
 
 nav {
   width: 100%;
   height: 80px;
-  background: red;
   position: fixed;
   top: 0;
-}
-
-nav .leftSide {
-  width: 40%;
-  height: 80px;
-  line-height: 80px;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  text-align: right;
-  background: #4F0E33;
-}
-
-nav .leftSide div {
-  color: #fff;
-  font-size: 30px;
-  text-transform: capitalize;
-  width: 222px;
-  margin: 0 auto;
-}
-
-nav .leftSide:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 40px solid #4F0E33;
-  border-right: 70px solid transparent;
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-}
-
-nav .rightSide {
-  width: 60%;
-  height: 80px;
-  display: inline-block;
-  background: #fff;
-}
-
-nav .rightSide .container {
-  width: 100%;
-  height: 40px;
-  vertical-align: top;
-  background: #4F0E33;
-}
-
-nav .rightSide .menu {
-  height: 40px;
-  line-height: 40px;
-  margin-left: 70px;
-}
-
-nav .rightSide .menu ul {
-  list-style: none;
-  font-size: 24px;
-  margin: 0;
-}
-
-nav .rightSide .menu ul li {
-  display: inline-block;
-  margin-right: 10px;
-
-  position: relative;
-  cursor: pointer;
-  z-index: 2;
-  color: #000;
-  transition: all 400ms;
-}
-
-nav .rightSide .menu ul li:after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 50px;
-  max-height: 2px;
-  background: #3d3d3d;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -ms-transition: all 500ms;
-  -o-transition: all 500ms;
-  transition: all 500ms;
-}
-
-nav .rightSide .menu ul li:hover:after {
-  width: 100%;
+  .leftSide {
+    width: 40%;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: right;
+    background: $navbar_color;
+    div {
+      color: $font_color_white;
+      font-size: 30px;
+      text-transform: capitalize;
+      width: 222px;
+      margin: 0 auto;
+    }
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 40px solid $navbar_color;
+      border-right: 70px solid transparent;
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+    }
+  }
+  .rightSide {
+    width: 60%;
+    height: 80px;
+    display: inline-block;
+    background: $navbar_background_color;
+    .container {
+      width: 100%;
+      height: 40px;
+      vertical-align: top;
+      background: $navbar_color;
+    }
+    .menu {
+      height: 40px;
+      line-height: 40px;
+      margin-left: 70px;
+      ul {
+        list-style: none;
+        font-size: 24px;
+        margin: 0;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          position: relative;
+          cursor: pointer;
+          z-index: 2;
+          color: #000;
+          transition: all 400ms;
+          a {
+            color: $font_color;
+            text-decoration: none;
+          }
+          &:after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 50px;
+            max-height: 2px;
+            background: $navbar_underline_color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            transition: all 500ms;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 main {
-  width: 80%;
-  margin: 0 auto 0;
+  width: 100%;
   padding-top: 100px;
-}
-
-main > h1, main > h2 {
-  text-align: center;
+  > h1, > h2 {
+    text-align: center;
+  }
+  .about {
+    a {
+      &:link {
+        color: $font_color;
+      }
+      &:visited {
+        color: $font_color;
+      }
+      &:hover {
+        color: $font_color;
+      }
+      &:active {
+        color: $font_color;
+      }
+    }
+  }
+  section {
+    padding-top: 80px;
+    width: 100%;
+    article {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-footer div {
-  width: 80%;
-  margin: 0 auto;
-  text-align: right;
+  div {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+  }
 }

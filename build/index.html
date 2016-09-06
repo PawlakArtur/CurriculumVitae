@@ -15,11 +15,11 @@
         <div class="container"></div>
         <div class="menu">
             <ul>
-                <li class="about">O mnie</li>
-                <li class="experience">Doświadczenie</li>
-                <li class="skills">Umiejętności</li>
-                <li class="education">Wykształcenie</li>
-                <li class="hobby">Zainteresowania</li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="#experience">Doświadczenie</a></li>
+                <li><a href="#education">Wykształcenie</a></li>
+                <li><a href="#hobby">Zainteresowania</a></li>
             </ul>
         </div>
     </div>
@@ -27,118 +27,128 @@
 <main>
     <h1>Artur Pawlak</h1>
     <h2>Frontend Developer</h2>
-    <section>
-        <h3>O mnie:</h3>
-        <ul>
-            <li><span>Data urodzenia:</span><strong>03.04.1990</strong></li>
-            <li><span>Telefon komórkowy:</span><strong>+48 723 238 159</strong></li>
-            <li><span>Adres email:</span><strong>pawlak.artur90@gmail.com</strong></li>
-            <li><span>Github:</span><strong>https://github.com/PawlakArtur</strong></li>
-        </ul>
+    <section id="about" class="about">
+        <article>
+            <h3>O mnie:</h3>
+            <ul>
+                <li><span>Data urodzenia:</span><strong>03.04.1990</strong></li>
+                <li><span>Telefon komórkowy:</span><strong>+48 723 238 159</strong></li>
+                <li><span>Adres email:</span><strong>pawlak.artur90@gmail.com</strong></li>
+                <li><span>Github:</span><strong><a href="https://github.com/PawlakArtur">https://github.com/PawlakArtur</a></strong></li>
+            </ul>
+        </article>
+    </section>
+    <section id="skills" class="skills">
+        <article>
+            <h3>Umiejętności:</h3>
+            <ul>
+                <li>
+                    Technologie webowe:
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>AngularJS</li>
+                        <li>jQuery</li>
+                        <li>AJAX</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SASS/LESS</li>
+                        <li>Bootstrap</li>
+                        <li>Foundation</li>
+                    </ul>
+                </li>
+                <li>
+                    Języki obce:
+                    <ul>
+                        <li>Angielski - średniozaawansowany
+                    </ul>
+                </li>
+                <li>
+                    Znajomość systemów:
+                    <ul>
+                        <li>Microsoft Windows</li>
+                        <li>Linux</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section id="experience" class="experience">
+        <article>
+            <h3>Doświadczenie zawodowe:</h3>
+            <div>
+                <h4><span>05.2016 - Teraz</span> Enovatio Sp. z o.o. (Warszawa)</h4>
+                <h5>Frontend Developer</h5>
+            </div>
+            <div>
+                <h4><span>10.2015 - 03.2016</span> Powiatowy Urząd Pracy w Mińsku Mazowieckim (Mińsk Mazowiecki)</h4>
+                <h5>Stażysta Informatyk</h5>
+                <p>Konserwacja systemów komputerowych, konfiguracja wewnętrznej sieci LAN, diagnozowanie i usuwanie usterek sprzętowych komputera.</p>
+            </div>
+            <div>
+                <h4><span>07.2014 - 07.2014</span> Vega Computer (Mińsk Mazowiecki)</h4>
+                <h5>Praktykant</h5>
+                <p>Praktyki w firmie zajmującej się sprzedażą i serwisem sprzętu komputerowego. Konserwacja i montaż komputerów.</p>
+            </div>
+            <div>
+                <h4><span>05.2009 - 05.2009</span> Top Electronics (Mińsk Mazowiecki)</h4>
+                <h5>Praktykant</h5>
+                <p>Praktyki w firmie zajmującą się sprzedażą, serwisem oraz montażem sprzętu elektronicznego. Montaż oraz konserwacja systemu monitoringu, systemu alarmowego, części elektronicznych w samochodach.</p>
+            </div>
+        </article>
+    </section>
+    <section id="education" class="education">
+        <article>
+            <h3>Szkolenia:</h3>
+            <div>
+                <h4><span>12.2015 - 02.2016</span> Szkolenie Front-End</h4>
+                <p>Szkolenie zostało przeprowadzone przez Akademie Kodu Michał Makaruk, obejmowało 70 godzin wykładów oraz ćwiczeń z zakresu HTML, CSS i JS.</p>
+            </div>
+            <h3>Wykształcenie:</h3>
+            <div>
+                <h4><span>10.2010 - 06.2015</span> Uniwersytet Przyrodniczo-Humanistyczny (Siedlce)</h4>
+                <p>Kierunek: Informatyka, Specjalizacja: Programowanie Systemów i Baz Danych Stopień: Inżynier, Praca dyplomowa: "Analiza porównawcza efektywności algorytmów sortowania i wizualizacja ich działania"</p>
+            </div>
+            <div>
+                <h4><span>09.2006 - 06.2010</span> ZSZ nr.2 im. Powstańców Warszawy (Mińsk Mazowiecki)</h4>
+                <p>Kierunek: Technikum teleinformatyczne</p>
+            </div>
+        </article>
     </section>
     <section>
-        <h3>Umiejętności:</h3>
-        <ul>
-            <li>
-                Technologie webowe:
-                <ul>
-                    <li>JavaScript</li>
-                    <li>AngularJS</li>
-                    <li>jQuery</li>
-                    <li>AJAX</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>SASS/LESS</li>
-                    <li>Bootstrap</li>
-                    <li>Foundation</li>
-                </ul>
-            </li>
-            <li>
-                Języki obce:
-                <ul>
-                    <li>Angielski - średniozaawansowany
-                </ul>
-            </li>
-            <li>
-                Znajomość systemów:
-                <ul>
-                    <li>Microsoft Windows</li>
-                    <li>Linux</li>
-                </ul>
-            </li>
-        </ul>
+        <article>
+            <h3>Doświadczenie:</h3>
+            <div>
+                <h4>Złożona aplikacja biznesowa przeznaczona dla klienta zagranicznego</h4>
+                <p>Użyte technologie: JavaScript, TypeScript, AngularJS 1.5, HTML, CSS, Bootstrap, ASP.NET MVC 3.0, ASP.NET Razor Markup.
+                    Aplikacja składa się z wielu modułów, które usprawniają pracę w dużych i małych firamach oraz przedsiębiorstwach.
+                    W projekcie byłem odpowiedzialny za frontendową warstwę pisaną w technologiach: HTML, CSS oraz AngularJS</p>
+            </div>
+            <div>
+                <h4>Aplikacja Wizualizacja algorytmów sortowania</h4>
+                <p>Użyte technologie: JavaScript, jQuery, HTML, CSS. Program
+                    został napisany w celach edukacyjnych, prezentuje on wizualne działanie algorytmów sortowania. Warstwa
+                    prezentacji została napisana w HTML i CSS, algorytmy sortowania w języku JavaScript, do animacji użyłem
+                    biblioteki jQuery.</p>
+            </div>
+            <div>
+                <h4>Aplikacja VolleyBallSite</h4>
+                <p>Użyte technologie: JavaScript, AJAX, JSON, HTML, CSS. Program został napisany w
+                    celach informacyjnych, prezentuje on wybrane informacje nt. siatkówki. Warstwa prezentacji została napisana w
+                    HTML i CSS, dzięki językowi JavaScript, technologii AJAX i JSON napisałem aplikacje w której informacje są
+                    pobierane dynamicznie z pliku z danymi.</p>
+            </div>
+            <div>
+                <h4>Inne</h4>
+                <p>Kilka mniejszych projektów napisanych za pomocą frameworków Bootstrap 3, Zurb Foundation 6, oraz w
+                    czystym HTML i CSS. Prosta gra w puzzle w czystym HTML, CSS i JavaScript.</p>
+            </div>
+        </article>
     </section>
-    <section>
-        <h3>Doświadczenie zawodowe:</h3>
-        <div>
-            <h4><span>05.2016 - Teraz</span> Enovatio Sp. z o.o. (Warszawa)</h4>
-            <h5>Frontend Developer</h5>
-        </div>
-        <div>
-            <h4><span>10.2015 - 03.2016</span> Powiatowy Urząd Pracy w Mińsku Mazowieckim (Mińsk Mazowiecki)</h4>
-            <h5>Stażysta Informatyk</h5>
-            <p>Konserwacja systemów komputerowych, konfiguracja wewnętrznej sieci LAN, diagnozowanie i usuwanie usterek sprzętowych komputera.</p>
-        </div>
-        <div>
-            <h4><span>07.2014 - 07.2014</span> Vega Computer (Mińsk Mazowiecki)</h4>
-            <h5>Praktykant</h5>
-            <p>Praktyki w firmie zajmującej się sprzedażą i serwisem sprzętu komputerowego. Konserwacja i montaż komputerów.</p>
-        </div>
-        <div>
-            <h4><span>05.2009 - 05.2009</span> Top Electronics (Mińsk Mazowiecki)</h4>
-            <h5>Praktykant</h5>
-            <p>Praktyki w firmie zajmującą się sprzedażą, serwisem oraz montażem sprzętu elektronicznego. Montaż oraz konserwacja systemu monitoringu, systemu alarmowego, części elektronicznych w samochodach.</p>
-        </div>
-    </section>
-    <section>
-        <h3>Szkolenia:</h3>
-        <div>
-            <h4><span>12.2015 - 02.2016</span> Szkolenie Front-End</h4>
-            <p>Szkolenie zostało przeprowadzone przez Akademie Kodu Michał Makaruk, obejmowało 70 godzin wykładów oraz ćwiczeń z zakresu HTML, CSS i JS.</p>
-        </div>
-    </section>
-    <section>
-        <h3>Wykształcenie:</h3>
-        <div>
-            <h4><span>10.2010 - 06.2015</span> Uniwersytet Przyrodniczo-Humanistyczny (Siedlce)</h4>
-            <p>Kierunek: Informatyka, Specjalizacja: Programowanie Systemów i Baz Danych Stopień: Inżynier, Praca dyplomowa: "Analiza porównawcza efektywności algorytmów sortowania i wizualizacja ich działania"</p>
-        </div>
-        <div>
-            <h4><span>09.2006 - 06.2010</span> ZSZ nr.2 im. Powstańców Warszawy (Mińsk Mazowiecki)</h4>
-            <p>Kierunek: Technikum teleinformatyczne</p>
-        </div>
-    </section>
-    <section>
-        <h3>Doświadczenie:</h3>
-        <div>
-            <h4>Złożona aplikacja biznesowa przeznaczona dla klienta zagranicznego</h4>
-            <p>Użyte technologie: JavaScript, TypeScript, AngularJS 1.5, HTML, CSS, Bootstrap, ASP.NET MVC 3.0, ASP.NET Razor Markup.
-                Aplikacja składa się z wielu modułów, które usprawniają pracę w dużych i małych firamach oraz przedsiębiorstwach.
-                W projekcie byłem odpowiedzialny za frontendową warstwę pisaną w technologiach: HTML, CSS oraz AngularJS</p>
-        </div>
-        <div>
-            <h4>Aplikacja Wizualizacja algorytmów sortowania</h4>
-            <p>Użyte technologie: JavaScript, jQuery, HTML, CSS. Program
-                został napisany w celach edukacyjnych, prezentuje on wizualne działanie algorytmów sortowania. Warstwa
-                prezentacji została napisana w HTML i CSS, algorytmy sortowania w języku JavaScript, do animacji użyłem
-                biblioteki jQuery.</p>
-        </div>
-        <div>
-            <h4>Aplikacja VolleyBallSite</h4>
-            <p>Użyte technologie: JavaScript, AJAX, JSON, HTML, CSS. Program został napisany w
-                celach informacyjnych, prezentuje on wybrane informacje nt. siatkówki. Warstwa prezentacji została napisana w
-                HTML i CSS, dzięki językowi JavaScript, technologii AJAX i JSON napisałem aplikacje w której informacje są
-                pobierane dynamicznie z pliku z danymi.</p>
-        </div>
-        <div>
-            <h4>Inne</h4>
-            <p>Kilka mniejszych projektów napisanych za pomocą frameworków Bootstrap 3, Zurb Foundation 6, oraz w
-                czystym HTML i CSS. Prosta gra w puzzle w czystym HTML, CSS i JavaScript.</p>
-        </div>
-    </section>
-    <section>
-        <h3>Zainteresowania:</h3>
-        <p>Interesuję się web developingiem, oraz nowościami w zakresie JavaScriptu, wiedzę poszerzam uczęszczając na meetup WarsawJS, na którym wygłaszane są prelekcje na temat JavaScriptu.</p>
+    <section id="hobby" class="hobby">
+        <article>
+            <h3>Zainteresowania:</h3>
+            <p>Interesuję się web developingiem, oraz nowościami w zakresie JavaScriptu, wiedzę poszerzam uczęszczając na meetup WarsawJS, na którym wygłaszane są prelekcje na temat JavaScriptu.</p>
+        </article>
     </section>
 </main>
 <footer>
