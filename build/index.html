@@ -5,19 +5,21 @@
     <title>Curriculum Vitae</title>
     <script type="text/javascript" src="scripts/script.min.js"></script>
     <link type="text/css" rel="stylesheet" href="styles/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/fontawesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="styles/style.min.css">
 </head>
 <body>
 <nav>
-    <div class="leftSide">
+    <div class="left-side">
         <div>curriculum vitae</div>
-    </div><div class="rightSide">
+    </div><div class="right-side">
         <div class="container"></div>
         <div class="menu">
             <ul>
                 <li><a href="#about">O mnie</a></li>
                 <li><a href="#skills">Umiejętności</a></li>
-                <li><a href="#experience">Doświadczenie</a></li>
+                <li><a href="#professional-experience">Doświadczenie zawodowe</a></li>
+                <li><a href="#education">Wykształcenie</a></li>
                 <li><a href="#education">Wykształcenie</a></li>
                 <li><a href="#hobby">Zainteresowania</a></li>
             </ul>
@@ -31,10 +33,10 @@
         <article>
             <h3>O mnie:</h3>
             <ul>
-                <li><span>Data urodzenia:</span><strong>03.04.1990</strong></li>
-                <li><span>Telefon komórkowy:</span><strong>+48 723 238 159</strong></li>
-                <li><span>Adres email:</span><strong>pawlak.artur90@gmail.com</strong></li>
-                <li><span>Github:</span><strong><a href="https://github.com/PawlakArtur">https://github.com/PawlakArtur</a></strong></li>
+                <li><div class="icons"><i class="fa fa-phone-square fa-3x" aria-hidden="true"></i><i class="fa fa-phone-square fa-3x" aria-hidden="true"></i></div><strong>+48 723 238 159</strong></li>
+                <li><div class="icons"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></div><strong>pawlak.artur90@gmail.com</strong></li>
+                <li><div class="icons"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div><strong><a href="https://www.linkedin.com/in/artur-pawlak-b42126115">https://www.linkedin.com/in/artur-pawlak-b42126115</a></strong></li>
+                <li><div class="icons"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></div><strong><a href="https://github.com/PawlakArtur">https://github.com/PawlakArtur</a></strong></li>
             </ul>
         </article>
     </section>
@@ -51,6 +53,7 @@
                         <li>AJAX</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
+                        <li>RWD</li>
                         <li>SASS/LESS</li>
                         <li>Bootstrap</li>
                         <li>Foundation</li>
@@ -72,7 +75,7 @@
             </ul>
         </article>
     </section>
-    <section id="experience" class="experience">
+    <section id="professional-experience" class="professional-experience">
         <article>
             <h3>Doświadczenie zawodowe:</h3>
             <div>
@@ -114,18 +117,25 @@
             </div>
         </article>
     </section>
-    <section>
+    <section id="experience" class="experience">
         <article>
             <h3>Doświadczenie:</h3>
             <div>
                 <h4>Złożona aplikacja biznesowa przeznaczona dla klienta zagranicznego</h4>
                 <p>Użyte technologie: JavaScript, TypeScript, AngularJS 1.5, HTML, CSS, Bootstrap, ASP.NET MVC 3.0, ASP.NET Razor Markup.
                     Aplikacja składa się z wielu modułów, które usprawniają pracę w dużych i małych firamach oraz przedsiębiorstwach.
-                    W projekcie byłem odpowiedzialny za frontendową warstwę pisaną w technologiach: HTML, CSS oraz AngularJS</p>
+                    W projekcie byłem odpowiedzialny za frontendową warstwę pisaną w technologiach: HTML, CSS, TypeScript oraz AngularJS</p>
+            </div>
+            <div>
+                <h4>Złożona aplikacja biznesowa przystosowywana dla dużych i małych przedsiębiorstw</h4>
+                <p>Użyte technologie: JavaScript, Knockout, HTML, CSS, Bootstrap.
+                    Aplikacja składa się z wielu modułów, które usprawniają pracę w dużych i małych firamach oraz przedsiębiorstwach.
+                    Program wspomaga zarządzanie projektami, obieg dokumentów, zarządzanie relacjami z klientem.
+                    W projekcie byłem odpowiedzialny za frontendową warstwę pisaną w technologiach: HTML, CSS</p>
             </div>
             <div>
                 <h4>Aplikacja Wizualizacja algorytmów sortowania</h4>
-                <p>Użyte technologie: JavaScript, jQuery, HTML, CSS. Program
+                <p>Użyte technologie: JavaScript, jQuery, HTML, CSS, ASP.NET, MVC, MVVM. Program
                     został napisany w celach edukacyjnych, prezentuje on wizualne działanie algorytmów sortowania. Warstwa
                     prezentacji została napisana w HTML i CSS, algorytmy sortowania w języku JavaScript, do animacji użyłem
                     biblioteki jQuery.</p>

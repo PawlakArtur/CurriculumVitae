@@ -14,7 +14,8 @@ var paths = {
     html: 'build/index.html',
     css: 'build/styles/*.css',
     sass: 'build/styles/sass/*.scss',
-    scripts: 'build/scripts/*.js'
+    scripts: 'build/scripts/*.js',
+    fontawesome: 'build/fontawesome/**/*'
 };
 
 gulp.task('browser-sync', function () {
@@ -71,8 +72,14 @@ gulp.task('scripts', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('addFontAwesome', function() {
+    return gulp.src(paths.fontawesome)
+        .pipe(gulp.dest('app/styles/fontawesome'))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('build', function(callback) {
-    runSequence('clean', ['html', 'cssreset', 'sass', 'scripts', 'browser-sync', 'watch'],
+    runSequence('clean', ['html', 'cssreset', 'sass', 'scripts', 'addFontAwesome', 'browser-sync', 'watch'],
         callback
     )
 });

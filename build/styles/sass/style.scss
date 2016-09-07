@@ -1,6 +1,6 @@
 $font_color: #4d4d4d;
 $font_color_white: #fff;
-$navbar_color: #B1200F;
+$navbar_color: #E87461;
 $navbar_background_color: #fff;
 $navbar_underline_color: #3d3d3d;
 
@@ -14,7 +14,8 @@ nav {
   height: 80px;
   position: fixed;
   top: 0;
-  .leftSide {
+  z-index: 10;
+  .left-side {
     width: 40%;
     height: 80px;
     line-height: 80px;
@@ -41,7 +42,7 @@ nav {
       left: 100%;
     }
   }
-  .rightSide {
+  .right-side {
     width: 60%;
     height: 80px;
     display: inline-block;
@@ -58,7 +59,7 @@ nav {
       margin-left: 70px;
       ul {
         list-style: none;
-        font-size: 24px;
+        font-size: 16px;
         margin: 0;
         li {
           display: inline-block;
@@ -119,18 +120,59 @@ main {
     }
   }
   section {
-    padding-top: 80px;
+    padding: 80px 0;
     width: 100%;
+    display: inline-block;
     article {
       width: 80%;
       margin: 0 auto;
     }
   }
+  .about {
+    background: #D5D887;
+    ul {
+      list-style-type: none;
+    }
+    .icons {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      .fa {
+        position: relative;
+        top: 0;
+        transition: 500ms;
+        &:last-child {
+          color: #2B8CBE;
+        }
+      }
+      &:hover .fa {
+        top: -48px;
+      }
+    }
+  }
+  .skills {
+    background: #33658A;
+  }
+  .professional-experience {
+    background: #F4A259;
+  }
+  .education {
+    background: #279AF1;
+  }
+  .experience {
+    background: #CFFFB0;
+  }
+  .hobby {
+    background: #FDCFF3;
+  }
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  background: #D6F599;
+  display: inline-block;
+  //position: fixed;
+  //bottom: 0;
   width: 100%;
   div {
     width: 80%;
