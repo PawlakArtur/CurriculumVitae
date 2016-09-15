@@ -1,20 +1,33 @@
+$background_color: #F8F7FF;
 $font_color: #4d4d4d;
 $font_color_white: #fff;
-$navbar_color: #E87461;
-$navbar_background_color: #fff;
+$navbar_color: #F79D5C;
+$navbar_background_color: #F5D3C8;
 $navbar_underline_color: #3d3d3d;
+$section_about: #EDEDF4;
+$section_skills: #D0D4D8
+$section_professional-experience: #C4CAD0;
+$section_education: #F2F6D0;
+$section_experience: #EDEDF4;
+$section_hobby: #F2F6D0;
+$footer_background: #EDEDF4;
 
 body {
-  background-color: rgba(0, 149, 148, 0.04);
+  background-color: $background_color;
+  //background-color: rgba(0, 149, 148, 0.04);
   color: $font_color;
 }
-
+.navBarSmall {
+  top: -40px;
+}
 nav {
   width: 100%;
   height: 80px;
   position: fixed;
   top: 0;
   z-index: 10;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  transition: top 500ms;
   .left-side {
     width: 40%;
     height: 80px;
@@ -103,35 +116,34 @@ main {
   > h1, > h2 {
     text-align: center;
   }
-  .about {
-    a {
-      &:link {
-        color: $font_color;
-      }
-      &:visited {
-        color: $font_color;
-      }
-      &:hover {
-        color: $font_color;
-      }
-      &:active {
-        color: $font_color;
-      }
-    }
-  }
   section {
     padding: 80px 0;
     width: 100%;
     display: inline-block;
+    box-shadow: 0px 3px 7px -5px rgba(0,0,0,0.75);
     article {
       width: 80%;
       margin: 0 auto;
     }
   }
   .about {
-    background: #D5D887;
+    background: $section_about;
     ul {
       list-style-type: none;
+      a {
+        &:link {
+          color: $font_color;
+        }
+        &:visited {
+          color: $font_color;
+        }
+        &:hover {
+          color: $font_color;
+        }
+        &:active {
+          color: $font_color;
+        }
+      }
     }
     .icons {
       display: inline-block;
@@ -152,24 +164,24 @@ main {
     }
   }
   .skills {
-    background: #33658A;
+    background: $section_skills;
   }
   .professional-experience {
-    background: #F4A259;
+    background: $section_professional-experience;
   }
   .education {
-    background: #279AF1;
+    background: $section_education;
   }
   .experience {
-    background: #CFFFB0;
+    background: $section_experience;
   }
   .hobby {
-    background: #FDCFF3;
+    background: $section_hobby;
   }
 }
 
 footer {
-  background: #D6F599;
+  background: $footer_background;
   display: inline-block;
   //position: fixed;
   //bottom: 0;
