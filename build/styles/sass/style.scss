@@ -5,7 +5,7 @@ $navbar_color: #F79D5C;
 $navbar_background_color: #F5D3C8;
 $navbar_underline_color: #3d3d3d;
 $section_about: #EDEDF4;
-$section_skills: #D0D4D8
+$section_skills: #D0D4D8;
 $section_professional-experience: #C4CAD0;
 $section_education: #F2F6D0;
 $section_experience: #EDEDF4;
@@ -18,7 +18,21 @@ body {
   color: $font_color;
 }
 .navBarSmall {
-  top: -40px;
+  height: 40px;
+  .left-side {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    div {
+      position: relative;
+      bottom: 0;
+    }
+  }
+  .right-side {
+    .container {
+      height: 0;
+    }
+  }
 }
 nav {
   width: 100%;
@@ -27,7 +41,7 @@ nav {
   top: 0;
   z-index: 10;
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-  transition: top 500ms;
+  transition: all 500ms;
   .left-side {
     width: 40%;
     height: 80px;
@@ -37,6 +51,7 @@ nav {
     position: relative;
     text-align: right;
     background: $navbar_color;
+    transition: all 500ms;
     div {
       color: $font_color_white;
       font-size: 30px;
@@ -57,14 +72,16 @@ nav {
   }
   .right-side {
     width: 60%;
-    height: 80px;
+    //height: 80px;
     display: inline-block;
     background: $navbar_background_color;
+    transition: all 500ms;
     .container {
       width: 100%;
       height: 40px;
       vertical-align: top;
       background: $navbar_color;
+      transition: all 500ms;
     }
     .menu {
       height: 40px;
