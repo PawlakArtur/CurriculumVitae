@@ -17,24 +17,8 @@ body {
   //background-color: rgba(0, 149, 148, 0.04);
   color: $font_color;
 }
-.navBarSmall {
-  height: 40px;
-  .left-side {
-    height: 40px;
-    line-height: 40px;
-    font-size: 16px;
-    div {
-      position: relative;
-      bottom: 0;
-    }
-  }
-  .right-side {
-    .container {
-      height: 0;
-    }
-  }
-}
 nav {
+  font-family: 'Allerta', sans-serif;
   width: 100%;
   height: 80px;
   position: fixed;
@@ -56,7 +40,7 @@ nav {
       color: $font_color_white;
       font-size: 30px;
       text-transform: capitalize;
-      width: 222px;
+      width: 260px;
       margin: 0 auto;
     }
     &:after {
@@ -126,13 +110,27 @@ nav {
     }
   }
 }
+.navBarSmall {
+  height: 40px;
+  .left-side {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    div {
+      position: relative;
+      bottom: 0;
+    }
+  }
+  .right-side {
+    .container {
+      height: 0;
+    }
+  }
+}
 
 main {
   width: 100%;
   padding-top: 100px;
-  > h1, > h2 {
-    text-align: center;
-  }
   section {
     padding: 80px 0;
     width: 100%;
@@ -141,6 +139,12 @@ main {
     article {
       width: 80%;
       margin: 0 auto;
+    }
+  }
+  .information {
+    font-family: 'Allerta', sans-serif;
+    > h1, > h2 {
+      text-align: center;
     }
   }
   .about {
