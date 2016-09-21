@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Vitae</title>
-    <script type="text/javascript" src="scripts/script.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="styles/normalize.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/fontawesome/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/style.min.css">
+    <script type="text/javascript" src="/scripts/script.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/styles/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="/styles/fontawesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/styles/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
 </head>
 <body>
 <nav>
     <div class="left-side">
         <div>curriculum vitae</div>
     </div><div class="right-side">
-        <div class="container"></div>
-        <div class="menu">
-            <ul>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#skills">Umiejętności</a></li>
-                <li><a href="#professional-experience">Doświadczenie zawodowe</a></li>
-                <li><a href="#education">Wykształcenie</a></li>
-                <li><a href="#experience">Doświadczenie</a></li>
-                <li><a href="#hobby">Zainteresowania</a></li>
-            </ul>
-        </div>
+    <div class="container"></div>
+    <div class="menu">
+        <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#professional-experience">Doświadczenie zawodowe</a></li>
+            <li><a href="#education">Wykształcenie</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#hobby">Zainteresowania</a></li>
+        </ul>
     </div>
+</div>
 </nav>
 <main>
-    <h1>Artur Pawlak</h1>
-    <h2>Frontend Developer</h2>
+    <section class="information">
+        <h1>Artur Pawlak</h1>
+        <h2>Frontend Developer</h2>
+    </section>
     <section id="about" class="about">
         <article>
             <h3>O mnie:</h3>
@@ -151,6 +154,19 @@
         <article>
             <h3>Zainteresowania:</h3>
             <p>Interesuję się web developingiem, oraz nowościami w zakresie JavaScriptu, wiedzę poszerzam uczęszczając na meetup WarsawJS, na którym wygłaszane są prelekcje na temat JavaScriptu.</p>
+        </article>
+    </section>
+    <section id="contact" class="contact">
+        <article>
+            <h3>Skontaktuj się ze mną:</h3>
+            <form action="//formspree.io/pawlak.artur90@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Imię">
+                <input type="email" name="_replyto" placeholder="Adres email">
+                <textarea name="message" placeholder="Wiadomość"></textarea>
+                <input type="submit" value="Wyślij" class="button">
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="/#" />
+            </form>
         </article>
     </section>
 </main>
