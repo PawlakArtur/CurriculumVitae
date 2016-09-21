@@ -4,6 +4,7 @@ $font_color_white: #fff;
 $navbar_color: #F79D5C;
 $navbar_background_color: #F5D3C8;
 $navbar_underline_color: #3d3d3d;
+$form_border_color: #d6d6d6;
 $section_about: #EDEDF4;
 $section_skills: #D0D4D8;
 $section_professional-experience: #C4CAD0;
@@ -11,6 +12,10 @@ $section_education: #F2F6D0;
 $section_experience: #EDEDF4;
 $section_hobby: #F2F6D0;
 $footer_background: #EDEDF4;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: $background_color;
@@ -198,6 +203,47 @@ main {
   }
   .hobby {
     background: $section_hobby;
+  }
+  .contact {
+    article {
+      width: 700px;
+      margin: 0 auto;
+      input, textarea, .button {
+        border-radius: 2px;
+        border: 1px solid transparent;
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+        transition: all 500ms;
+        &:focus {
+          outline: none;
+          border: 1px solid $form_border_color;
+        }
+      }
+      input {
+        width: 300px;
+        display: block;
+        margin: 15px 0;
+        padding: 10px;
+        &:nth-child(1), &:nth-child(2) {
+          display: inline-block;
+        }
+      }
+      textarea {
+        height: 200px;
+        width: 605px;
+        padding: 10px;
+        resize: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      .button {
+        background: #fff;
+        cursor: pointer;
+        &:active {
+          background: $footer_background;
+        }
+      }
+    }
   }
 }
 
