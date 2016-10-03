@@ -152,11 +152,40 @@ main {
         text-align: right;
         padding: 0 50px 0 0;
       }
+      h4 {
+        position: relative;
+      }
+      h4:hover:after {
+        width: 75%;
+      }
+      h4:before, h4:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 75%;
+        left: 0;
+        bottom: -5px;
+        border-bottom: 2px dotted $font_color;
+        opacity: 1;
+      }
+      h4:after {
+        width: 0;
+        border-bottom-style: solid ;
+        transition: all 500ms;
+      }
       > div {
         width: 79%;
         display: inline-block;
         border-left: 2px solid $font_color;
         padding: 0 0 0 10px;
+        > div {
+          h5 {
+            padding: 0 0 0 5px;
+          }
+          > p {
+            padding: 0 0 0 10px;
+          }
+        }
       }
     }
   }
@@ -164,6 +193,44 @@ main {
     font-family: 'Allerta', sans-serif;
     > h1, > h2 {
       text-align: center;
+    }
+    h2 {
+      position: relative;
+      padding: 20px 0;
+    }
+    h2:hover:before {
+      opacity: 1;
+      bottom: 0;
+    }
+    h2:hover:after {
+      opacity: 1;
+      bottom: -15px;
+    }
+    h2:before, h2:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      transition: all 500ms;
+    }
+    h2:before {
+      width: 500px;
+      height: 2px;
+      left: 25%;
+      background: linear-gradient(to right, $navbar_color 0,$navbar_color 230px,transparent 230px,transparent 270px,$navbar_color 270px,$navbar_color 500px);
+      bottom: 10px;
+      opacity: 0;
+    }
+    h2:after {
+      width: 30px;
+      height: 30px;
+      border-bottom: 2px solid $navbar_color;
+      border-right: 2px solid $navbar_color;
+      background: $background_color;
+      transform: rotate(45deg);
+      left: 48.3%;
+      bottom: -5px;
+      opacity: 0;
+
     }
   }
   .about {
@@ -220,8 +287,7 @@ main {
             font-size: 20px;
             text-align: center;
             > ul {
-
-              padding: 50px 0;
+              padding: 10px 0;
               > li {
                 font-size: 16px;
                 display: inline-block;
@@ -284,6 +350,9 @@ main {
     article {
       width: 900px;
       margin: 0 auto;
+      > div {
+        border: none;
+      }
       input, textarea, .button {
         border-radius: 2px;
         border: 1px solid transparent;
