@@ -145,6 +145,19 @@ main {
     article {
       width: 80%;
       margin: 0 auto;
+      > h3 {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        padding: 0 50px 0 0;
+      }
+      > div {
+        width: 79%;
+        display: inline-block;
+        border-left: 2px solid $font_color;
+        padding: 0 0 0 10px;
+      }
     }
   }
   .information {
@@ -171,6 +184,16 @@ main {
           color: $font_color;
         }
       }
+      strong, > strong a {
+        line-height: 48px;
+        vertical-align: top;
+      }
+      li strong a {
+        vertical-align: top;
+      }
+      li:hover .icons .fa  {
+        top: -48px;
+      }
     }
     .icons {
       display: inline-block;
@@ -185,13 +208,65 @@ main {
           color: #2B8CBE;
         }
       }
-      &:hover .fa {
-        top: -48px;
-      }
     }
   }
   .skills {
     background: $section_skills;
+    article {
+      > div {
+        ul {
+          list-style: none;
+          > li {
+            font-size: 20px;
+            text-align: center;
+            > ul {
+
+              padding: 50px 0;
+              > li {
+                font-size: 16px;
+                display: inline-block;
+                padding: 20px;
+                span {
+                  display: block;
+                }
+                i {
+                  font-size: 50px;
+                }
+                .icons {
+                  display: inline-block;
+                  width: 50px;
+                  height: 50px;
+                  overflow: hidden;
+                  > i {
+                    position: relative;
+                    display: inline-block;
+                    left: 0;
+                    top: 0;
+                    transition: 500ms;
+                  }
+                }
+                .vuejs {
+                  height: 43px;
+                  fill: currentColor;
+                  margin: 3px 0 3px;
+                  position: relative;
+                  display: inline-block;
+                  left: 0;
+                  top: 0;
+                  transition: 500ms;
+                }
+              }
+              > li:hover .icons > i {
+                top: -50px;
+              }
+              > li:hover .icons > img {
+                top: -50px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .professional-experience {
     background: $section_professional-experience;
@@ -207,7 +282,7 @@ main {
   }
   .contact {
     article {
-      width: 700px;
+      width: 900px;
       margin: 0 auto;
       input, textarea, .button {
         border-radius: 2px;
