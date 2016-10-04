@@ -1,16 +1,18 @@
 $background_color: #F8F7FF;
 $font_color: #4d4d4d;
 $font_color_white: #fff;
-$navbar_color: #F79D5C;
-$navbar_background_color: #F5D3C8;
-$navbar_underline_color: #3d3d3d;
+$navbar_color: #b35d5d;
+$navbar_background_color: #eaea95;
+$navbar_underline_color: $navbar_color;
+$section_divider_line: #4D4D4D;
+$section_information: $navbar_background_color;
+$section_about: #F2F6D0;
+$section_skills: $section_about;
+$section_professional-experience: $section_about;
+$section_education: $section_about;
+$section_experience: $section_about;
+$section_hobby: $section_about;
 $form_border_color: #d6d6d6;
-$section_about: #EDEDF4;
-$section_skills: #D0D4D8;
-$section_professional-experience: #C4CAD0;
-$section_education: #F2F6D0;
-$section_experience: #EDEDF4;
-$section_hobby: #F2F6D0;
 $footer_background: #EDEDF4;
 
 * {
@@ -19,7 +21,6 @@ $footer_background: #EDEDF4;
 
 body {
   background-color: $background_color;
-  //background-color: rgba(0, 149, 148, 0.04);
   color: $font_color;
 }
 nav {
@@ -29,7 +30,6 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
   transition: all 500ms;
   .left-side {
     width: 40%;
@@ -61,7 +61,6 @@ nav {
   }
   .right-side {
     width: 60%;
-    //height: 80px;
     display: inline-block;
     background: $navbar_background_color;
     transition: all 500ms;
@@ -95,7 +94,7 @@ nav {
           &:after {
             content: "";
             display: block;
-            width: 0%;
+            width: 0;
             height: 50px;
             max-height: 2px;
             background: $navbar_underline_color;
@@ -136,12 +135,41 @@ nav {
 main {
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 20px;
   section {
     padding: 80px 0;
     width: 100%;
     display: inline-block;
-    box-shadow: 0px 3px 7px -5px rgba(0,0,0,0.75);
+    position: relative;
+    &:nth-child(2), &:nth-child(8) {
+      &:before, &:after {
+        content: none;
+      }
+    }
+    &:nth-child(7), &:nth-child(8)  {
+      box-shadow: 0 3px 7px -5px rgba(0,0,0,0.75);
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      margin: 0 auto;
+      background: linear-gradient(to right, transparent 0%, transparent 18%, $section_divider_line 20%,$section_divider_line 45%,transparent 45%, transparent 55%,$section_divider_line 55%, $section_divider_line 80%, transparent 82%, transparent 100%);
+    }
+    &:after {
+      content: "...";
+      font-size: 50px;
+      display: block;
+      position: absolute;
+      top: -40px;
+      width: 100%;
+      text-align: center;
+      line-height: 50px;
+    }
     article {
       width: 80%;
       margin: 0 auto;
@@ -154,6 +182,7 @@ main {
       }
       h4 {
         position: relative;
+        padding: 5px 0;
       }
       h4:hover:after {
         width: 75%;
@@ -176,7 +205,7 @@ main {
       > div {
         width: 79%;
         display: inline-block;
-        border-left: 2px solid $font_color;
+        border-left: 2px solid $section_divider_line;
         padding: 0 0 0 10px;
         > div {
           h5 {
@@ -190,7 +219,9 @@ main {
     }
   }
   .information {
+    background: $section_information;
     font-family: 'Allerta', sans-serif;
+    margin-top: 20px;
     > h1, > h2 {
       text-align: center;
     }
@@ -225,7 +256,7 @@ main {
       height: 30px;
       border-bottom: 2px solid $navbar_color;
       border-right: 2px solid $navbar_color;
-      background: $background_color;
+      background: transparent;
       transform: rotate(45deg);
       left: 48.3%;
       bottom: -5px;
@@ -235,6 +266,10 @@ main {
   }
   .about {
     background: $section_about;
+    .quote {
+      text-indent: 20px;
+      line-height: 20px;
+    }
     ul {
       list-style-type: none;
       a {
@@ -272,7 +307,7 @@ main {
         top: 0;
         transition: 500ms;
         &:last-child {
-          color: #2B8CBE;
+          color: $navbar_color;
         }
       }
     }
@@ -313,7 +348,6 @@ main {
                 }
                 .vuejs {
                   height: 43px;
-                  fill: currentColor;
                   margin: 3px 0 3px;
                   position: relative;
                   display: inline-block;
@@ -356,7 +390,7 @@ main {
       input, textarea, .button {
         border-radius: 2px;
         border: 1px solid transparent;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.75);
         transition: all 500ms;
         &:focus {
           outline: none;
@@ -395,8 +429,6 @@ main {
 footer {
   background: $footer_background;
   display: inline-block;
-  //position: fixed;
-  //bottom: 0;
   width: 100%;
   div {
     width: 80%;
