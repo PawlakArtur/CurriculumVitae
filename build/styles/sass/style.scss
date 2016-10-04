@@ -22,6 +22,7 @@ body {
   //background-color: rgba(0, 149, 148, 0.04);
   color: $font_color;
 }
+
 nav {
   font-family: 'Allerta', sans-serif;
   width: 100%;
@@ -29,7 +30,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
   transition: all 500ms;
   .left-side {
     width: 40%;
@@ -115,6 +116,7 @@ nav {
     }
   }
 }
+
 .navBarSmall {
   height: 40px;
   .left-side {
@@ -141,7 +143,7 @@ main {
     padding: 80px 0;
     width: 100%;
     display: inline-block;
-    box-shadow: 0px 3px 7px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 7px -5px rgba(0, 0, 0, 0.75);
     article {
       width: 80%;
       margin: 0 auto;
@@ -170,7 +172,7 @@ main {
       }
       h4:after {
         width: 0;
-        border-bottom-style: solid ;
+        border-bottom-style: solid;
         transition: all 500ms;
       }
       > div {
@@ -191,46 +193,40 @@ main {
   }
   .information {
     font-family: 'Allerta', sans-serif;
+    position: relative;
     > h1, > h2 {
       text-align: center;
     }
     h2 {
       position: relative;
       padding: 20px 0;
-    }
-    h2:hover:before {
-      opacity: 1;
-      bottom: 0;
-    }
-    h2:hover:after {
-      opacity: 1;
-      bottom: -15px;
-    }
-    h2:before, h2:after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      transition: all 500ms;
-    }
-    h2:before {
-      width: 500px;
-      height: 2px;
-      left: 25%;
-      background: linear-gradient(to right, $navbar_color 0,$navbar_color 230px,transparent 230px,transparent 270px,$navbar_color 270px,$navbar_color 500px);
-      bottom: 10px;
-      opacity: 0;
-    }
-    h2:after {
-      width: 30px;
-      height: 30px;
-      border-bottom: 2px solid $navbar_color;
-      border-right: 2px solid $navbar_color;
-      background: $background_color;
-      transform: rotate(45deg);
-      left: 48.3%;
-      bottom: -5px;
-      opacity: 0;
-
+      .underline {
+        display: block;
+        position: relative;
+        width: 500px;
+        height: 2px;
+        margin: 15px auto 0;
+        background: linear-gradient(to right, $navbar_color 0, $navbar_color 230px, transparent 230px, transparent 270px, $navbar_color 270px, $navbar_color 500px);
+        opacity: 0;
+        transition: all 500ms;
+      }
+      .underline:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid $navbar_color;
+        border-right: 2px solid $navbar_color;
+        transform: rotate(45deg);
+        left: 234px;
+        bottom: -15px;
+        opacity: 0;
+        transition: all 500ms;
+      }
+      &:hover .underline, .underline:after {
+        opacity: 1;
+      }
     }
   }
   .about {
@@ -258,7 +254,7 @@ main {
       li strong a {
         vertical-align: top;
       }
-      li:hover .icons .fa  {
+      li:hover .icons .fa {
         top: -48px;
       }
     }
@@ -356,7 +352,7 @@ main {
       input, textarea, .button {
         border-radius: 2px;
         border: 1px solid transparent;
-        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
         transition: all 500ms;
         &:focus {
           outline: none;
