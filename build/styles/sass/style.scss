@@ -31,10 +31,6 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
-<<<<<<< HEAD
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-=======
->>>>>>> bf71b46d49709b8dc4fba63b255ef1ac4fe6338a
   transition: all 500ms;
   .left-side {
     width: 40%;
@@ -146,9 +142,6 @@ main {
     padding: 80px 0;
     width: 100%;
     display: inline-block;
-<<<<<<< HEAD
-    box-shadow: 0px 3px 7px -5px rgba(0, 0, 0, 0.75);
-=======
     position: relative;
     &:nth-child(2), &:nth-child(8) {
       &:before, &:after {
@@ -179,7 +172,6 @@ main {
       text-align: center;
       line-height: 50px;
     }
->>>>>>> bf71b46d49709b8dc4fba63b255ef1ac4fe6338a
     article {
       width: 80%;
       margin: 0 auto;
@@ -231,18 +223,14 @@ main {
   .information {
     background: $section_information;
     font-family: 'Allerta', sans-serif;
-<<<<<<< HEAD
     position: relative;
-=======
     margin-top: 20px;
->>>>>>> bf71b46d49709b8dc4fba63b255ef1ac4fe6338a
     > h1, > h2 {
       text-align: center;
     }
     h2 {
       position: relative;
       padding: 20px 0;
-<<<<<<< HEAD
       .underline {
         display: block;
         position: relative;
@@ -270,29 +258,6 @@ main {
       &:hover .underline, .underline:after {
         opacity: 1;
       }
-=======
-    }
-    h2:hover:before {
-      opacity: 1;
-      bottom: 0;
-    }
-    h2:hover:after {
-      opacity: 1;
-      bottom: -15px;
-    }
-    h2:before, h2:after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      transition: all 500ms;
-    }
-    h2:before {
-      width: 500px;
-      height: 2px;
-      left: 25%;
-      background: linear-gradient(to right, $navbar_color 0,$navbar_color 230px,transparent 230px,transparent 270px,$navbar_color 270px,$navbar_color 500px);
-      bottom: 10px;
-      opacity: 0;
     }
     h2:after {
       width: 30px;
@@ -304,8 +269,6 @@ main {
       left: 48.3%;
       bottom: -5px;
       opacity: 0;
-
->>>>>>> bf71b46d49709b8dc4fba63b255ef1ac4fe6338a
     }
   }
   .about {
@@ -434,11 +397,7 @@ main {
       input, textarea, .button {
         border-radius: 2px;
         border: 1px solid transparent;
-<<<<<<< HEAD
-        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-=======
         box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.75);
->>>>>>> bf71b46d49709b8dc4fba63b255ef1ac4fe6338a
         transition: all 500ms;
         &:focus {
           outline: none;
