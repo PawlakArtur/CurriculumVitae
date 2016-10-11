@@ -8,5 +8,5 @@ window.addEventListener("DOMContentLoaded", function() {
         } else {
             nav[0].classList.toggle('navBarSmall', false);
         }
-    })
+    });
 }, false);

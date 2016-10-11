@@ -58,6 +58,7 @@ nav {
       position: absolute;
       bottom: 0;
       left: 100%;
+      transition: all 500ms;
     }
   }
   .right-side {
@@ -76,6 +77,7 @@ nav {
       height: 40px;
       line-height: 40px;
       margin-left: 70px;
+      transition: all 500ms;
       ul {
         list-style: none;
         font-size: 16px;
@@ -331,6 +333,7 @@ main {
             > ul {
               padding: 10px 0;
               > li {
+                width: 120px;
                 font-size: 16px;
                 display: inline-block;
                 padding: 20px;
@@ -441,5 +444,238 @@ footer {
     width: 80%;
     margin: 0 auto;
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 1570px){
+  nav {
+    .left-side {
+      width: 25%;
+    }
+    .right-side {
+      width: 75%;
+    }
+  }
+
+  .navBarSmall {
+    .left-side {
+      width: 25%;
+    }
+    .right-side {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  nav {
+    .left-side {
+      height: 80px;
+      line-height: 80px;
+      div {
+        width: auto;
+      }
+      &:after {
+        border-top-width: 80px;
+      }
+    }
+    .right-side {
+      .menu {
+        height: 80px;
+      }
+      .container {
+        height: 0;
+      }
+    }
+  }
+
+  .navBarSmall {
+    .left-side {
+      height: 80px;
+      line-height: 80px;
+      div {
+        width: auto;
+      }
+      &:after {
+        border-top-width: 80px;
+      }
+    }
+    .right-side {
+      .menu {
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  nav {
+    .left-side {
+      line-height: 40px;
+      div {
+        width: auto;
+      }
+    }
+    .right-side {
+      .container {
+        height: 0;
+      }
+    }
+  }
+  .navBarSmall {
+    .left-side {
+      line-height: 40px;
+      div {
+        width: auto;
+      }
+    }
+  }
+  main {
+    section article > h3 {
+      width: 100%;
+      text-align: left;
+      display: block;
+    }
+    .about {
+      ul strong {
+        line-height: 30px;
+      }
+      .icons {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  nav {
+    .left-side {
+      display: none;
+    }
+    .right-side {
+      width: 100%;
+      .menu {
+        margin-left: 0;
+        ul {
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          -webkit-padding-start: 0;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .navBarSmall {
+    .left-side {
+      display: none;
+    }
+    .right-side {
+      width: 100%;
+      .menu {
+        margin-left: 0;
+        ul {
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          -webkit-padding-start: 0;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  main {
+    section {
+      article {
+        h4 {
+          &:before, &:hover:after {
+            width: 100%;
+          }
+          &:after {
+            width: 0;
+          }
+        }
+      }
+    }
+    .contact {
+      article {
+        padding-left: 10px;
+        width: auto;
+        input, textarea {
+          display: block;
+          width: 100%;
+          &:nth-child(2), &:nth-child(1) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  nav {
+    .left-side {
+      display: none;
+    }
+    .right-side {
+      width: 100%;
+      .menu {
+        margin-left: 0;
+        ul {
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          -webkit-padding-start: 0;
+          padding-left: 5px;
+          li {
+            margin-right: 5px;
+            font-size: 14px;
+            &:after {
+              bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navBarSmall {
+    .left-side {
+      display: none;
+    }
+    .right-side {
+      width: 100%;
+      .menu {
+        margin-left: 0;
+        ul {
+          -webkit-margin-before: 0;
+          -webkit-margin-after: 0;
+          -webkit-padding-start: 0;
+          padding-left: 5px;
+          li {
+            margin-right: 5px;
+            font-size: 14px;
+            &:after {
+              bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .skills {
+    .skillIcons {
+      padding: 10px;
+      width: 80px;
+    }
+  }
+  main {
+    .information h2 .underline {
+      width: 200px;
+      background: linear-gradient(to right, #b35d5d 0, #b35d5d 80px, transparent 80px, transparent 120px, #b35d5d 120px, #b35d5d 200px);
+      &:after {
+        left: 84px;
+      }
+    }
   }
 }
