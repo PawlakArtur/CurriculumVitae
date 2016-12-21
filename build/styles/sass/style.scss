@@ -94,6 +94,11 @@ nav {
             color: $font_color;
             text-decoration: none;
           }
+          &.active {
+            &:after {
+              width: 100% !important;
+            }
+          }
           &:after {
             content: "";
             display: block;
@@ -145,6 +150,13 @@ main {
     width: 100%;
     display: inline-block;
     position: relative;
+    &.active {
+      article {
+        > div {
+          box-shadow: -2px 0px 1px -2px #000;
+        }
+      }
+    }
     &:nth-child(2), &:nth-child(8) {
       &:before, &:after {
         content: none;
@@ -211,6 +223,8 @@ main {
         display: inline-block;
         border-left: 2px solid $section_divider_line;
         padding: 0 0 0 10px;
+        box-shadow: 0 0px 7px -5px rgba(0,0,0,0.75);
+        transition: box-shadow 500ms;
         > div {
           h5 {
             padding: 0 0 0 5px;
@@ -227,6 +241,14 @@ main {
     font-family: 'Allerta', sans-serif;
     position: relative;
     margin-top: 20px;
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      border-radius: 50%;
+      display: inline-block;
+      border: 8px solid #fff;
+    }
     > h1, > h2 {
       text-align: center;
     }
