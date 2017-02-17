@@ -223,7 +223,7 @@ main {
         display: inline-block;
         border-left: 2px solid $section_divider_line;
         padding: 0 0 0 10px;
-        box-shadow: 0 0px 7px -5px rgba(0,0,0,0.75);
+        box-shadow: 0 0px 7px -6px rgba(0,0,0,0.75);
         transition: box-shadow 500ms;
         > div {
           h5 {
@@ -613,6 +613,9 @@ footer {
   main {
     section {
       article {
+        div {
+          width: 100%;
+        }
         h4 {
           &:before, &:hover:after {
             width: 100%;
@@ -625,8 +628,7 @@ footer {
     }
     .contact {
       article {
-        padding-left: 10px;
-        width: auto;
+        width: 95%;
         input, textarea {
           display: block;
           width: 100%;
